@@ -8,6 +8,8 @@ express --view=pug --css=sass --git
 
 ## How to
 
+We'll need a database provider (eg. XAMP/MAMP/ wtv) and you can find the database dump @ classicmodels.sql.zip.
+
 ```bash
 # Installation des dépendances
 npm i
