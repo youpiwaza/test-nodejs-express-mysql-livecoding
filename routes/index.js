@@ -7,11 +7,19 @@ const db = mysql.createConnection({
   host       : 'localhost'
   ,user      : 'root'
   ,password  : ''
+  ,database  : 'classicmodels'
 });
 
 db.connect(function(err) {
+  // On test la conenxion a la bdd
   if (err) throw err;
   console.log('Connecté à la base de données MySQL!');
+
+  // On test une première requête bateau
+  db.query('SELECT * FROM `products`', function (err, result) {
+    if (err) throw err;
+    console.log(result);
+  });
 });
 
 /* GET home page. */
