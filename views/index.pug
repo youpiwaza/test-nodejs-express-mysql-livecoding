@@ -7,3 +7,25 @@ block content
   ul
     each val in lesDonneesQuiViennentDeLaBDD
       li= val.productName
+  
+  //- On crée une seule table, qui va contenir...
+  table
+    //- les en-têtes
+    thead
+      //- Une seule ligne, qui contient..
+      tr
+        //- tous..
+        each val, key in lesDonneesQuiViennentDeLaBDD[0]
+          //- .. les noms de colonnes (du premier produit)
+          th= key
+    tbody
+      //- Pour chaque produit..
+      each product in lesDonneesQuiViennentDeLaBDD
+        //- .. je crée une nouvelle ligne
+        tr
+          //- Dans cette ligne, on va retrouver
+          //- toutes les caracs
+          //- Pour toutes les carac
+          each caracteristique in product
+            //- un colonne
+            td= caracteristique
