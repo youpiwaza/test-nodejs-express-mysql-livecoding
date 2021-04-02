@@ -6,6 +6,8 @@ Boilerplate généré à partir de [express generator](https://expressjs.com/en/
 express --view=pug --css=sass --git
 ```
 
+Tutorial : [here](https://practicalprogramming.fr/nodejs-mysql).
+
 ## How to
 
 We'll need a database provider (eg. XAMP/MAMP/ wtv) and you can find the database dump @ classicmodels.sql.zip.
